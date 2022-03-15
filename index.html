@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-4">
+            <div class="col-12">
+            <h2>Users</h2>
+            </div>
+        </div>
+
+        <form id="form" class="row">
+            <div class="col-12 col-md-6">
+                <label class="form-lable w-100 ">
+                    Name:
+                    <input class="form-control " type="text" id="firistname" >
+                </label>
+
+                <label class="form-lable w-100">
+                    Lastname:
+                    <input class="form-control col-6" type="text" id="lastname" >
+                </label>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <label class="form-lable w-100 ">
+                    Phone:
+                    <input class="form-control " type="text" id="phone" >
+                </label>
+
+                <label class="form-lable w-100">
+                    password:
+                    <input class="form-control col-6" type="password" id="password" >
+                </label>
+
+                <label class="form-lable w-100">
+                    password(repea):
+                    <input class="form-control col-6" type="password" id="password-repea" >
+                </label>
+            </div>
+            <button class="mt-5 w-100" id="" type="submit">jo"natish</button>
+        </form>
+
+        <div id="user-list" class=" mt-4">
+        
+          
+        </div>
+
+    </div>
+
+    </div>
+
+    <template id="itemtemplete">
+      
+        <div  class="col-12">
+            <div class="user border rounded-1 m-2 p-2 d-flex align-items-center justify-content-between">
+                <img class="user__img" src="https://picsum.photos/40/40" alt="">
+                <div class="user__fuiiname">name</div>
+                <div class="user__tel">222222232222</div>
+                 
+                <button data-task="edit" class="edit btn btn-info" >edit</button>
+                <button data-task="delet" class="delet btn btn-danger " >delet</button>
+
+            </div>
+
+    </template>
+</body>
+<script src="./js/main.js"></script>
+</html>
